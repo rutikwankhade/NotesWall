@@ -1,0 +1,100 @@
+
+.content{
+max-width:750px ;
+margin:auto;
+justify-content: center;
+align-items: center;
+padding:15px;
+}
+
+.navbar{
+background-color: #00e673;
+color:#ffffff;
+
+}
+.icon{height:35px;
+width:35px;
+margin-left:10px;
+margin-right: 10px;;
+}
+
+.note-input{
+    margin-top:40px;
+    padding:20px;
+    display:flex;
+    flex-direction: row;
+
+}
+.input-text{
+    height:100px;
+    max-width: 500px;;
+        
+        
+        
+        box-shadow: 5px 5px #00e673;
+    background-color: #ccffcc;
+    border-radius: 6px;
+
+}
+
+.btn{
+    background-color: #00e673;
+    color:#ffffff;
+}
+.action{display: flex;
+flex-direction: column;}
+.theme{
+    width:90px;
+    height:35px;
+    
+}
+
+.notes{
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.note{
+    padding:15px;
+    background-color: #ccffcc;
+    border-radius: 5px;
+    width: 250px;
+    box-shadow: 4px 4px #f2f2f2;
+    margin:10px;
+    height:150px;
+    border-top: solid 5px #4d4d4d;
+
+}
+
+footer {
+    height: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+    margin-top:50px;
+}
+
+@media screen and (max-width:600px){
+    .note-input{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .action{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .notes{
+        display: flex;
+        flex-direction: column;
+    }
+}
