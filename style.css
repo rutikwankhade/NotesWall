@@ -1,4 +1,6 @@
-
+.header {
+    background-color: #f2f2f2;
+}
 .content{
 max-width:750px ;
 margin:auto;
@@ -8,7 +10,7 @@ padding:15px;
 }
 
 .navbar{
-background-color: #00e673;
+background-color: #394356;
 color:#ffffff;
 
 }
@@ -19,7 +21,7 @@ margin-right: 10px;;
 }
 
 .note-input{
-    margin-top:40px;
+    margin-top:30px;
     padding:20px;
     display:flex;
     flex-direction: row;
@@ -27,18 +29,23 @@ margin-right: 10px;;
 }
 .input-text{
     height:100px;
-    max-width: 500px;;
+    width: 500px;;
+      padding:10px;  
         
         
-        
-        box-shadow: 5px 5px #00e673;
-    background-color: #ccffcc;
+        box-shadow: 5px 5px #394356;
+    background-color: #ffffff;
     border-radius: 6px;
 
 }
 
 .btn{
-    background-color: #00e673;
+    background-color: #394356;
+    color:#ffffff;
+            box-shadow: 5px 5px #d1d1e0;
+
+}
+.btn:focus{
     color:#ffffff;
 }
 .action{display: flex;
@@ -49,7 +56,7 @@ flex-direction: column;}
     
 }
 
-.notes{
+.notes-list{
     max-width: 1000px;
     align-items: center;
     justify-content: center;
@@ -61,23 +68,29 @@ flex-direction: column;}
 
 .note{
     padding:15px;
-    background-color: #ccffcc;
     border-radius: 5px;
     width: 250px;
     box-shadow: 4px 4px #f2f2f2;
     margin:10px;
     height:150px;
     border-top: solid 5px #4d4d4d;
+    overflow-y: scroll;
+    scrollbar-width: 6px;
+    scrollbar-color: #f2f2f2f2;
 
+}
+.bin-icon{
+    height:20px;
+    width:20px;
 }
 
 footer {
     height: 40px;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #f2f2f2;;
     padding: 10px;
     font-size: 14px;
-    margin-top:50px;
+    margin-top:300px;
 }
 
 @media screen and (max-width:600px){
@@ -96,5 +109,8 @@ footer {
     .notes{
         display: flex;
         flex-direction: column;
+    }
+    .input-text{
+        width:auto;
     }
 }
