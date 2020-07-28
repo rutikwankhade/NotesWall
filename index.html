@@ -7,38 +7,38 @@
        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="icons/sticky-notes.png">
+    <link rel="shortcut icon" href="icons/logo.png">
     <title>NotesWall</title>
 </head>
 <body>
     <nav class="navbar ">
-        <h3><img src="icons/sticky-notes.png" class="icon">NotesWall</h3>
+        <h4 class="m-1"><img src="icons/logo.png" class="icon">NotesWall</h4>
     </nav>
+    
     <div class="header">
        <div class="content">
 
             <div class="note-input">
                 <textarea class="input-text m-1 get-note" rows="3" placeholder="Write note here"></textarea>
-                <div class="action m-3">
-                    <input type="color" value="#ccffcc" class="theme m-1 get-color">
-                    
-                    <button class=" btn m-1 " id="add-btn">Add note</button>
-
-    </div>
-    </div>
+                    <div class="action m-3">
+                        <input type="color" value="#ccffcc" class="theme m-1 get-color">
+                        <button class=" btn m-1 " id="add-btn">Add note</button>
+                    </div>
+            </div>
        </div> 
-       </div>
+    </div>
 
-       <div class="notes-list mt-3">
+       
+    <div class="notes-list mt-3">
 
+        <div class="no-notes">
+            <h4 class="msg">You haven't added notes yet.</h4>
+            <img src="icons/pixeltrue-vision-1.png" class="illustration fluid-img">
+        </div> 
+    
+    </div>
 
-
-        
-        
-        
-
-       </div>
-          <footer class="bottom">Made with &#10084; By <a href="https://rutikw.now.sh">Rutik Wankhade</a></footer>
+    <footer class="bottom">Made with &#10084; By <a href="https://rutikw.now.sh">Rutik Wankhade</a></footer>
 
 </body>
 <script src="app.js"></script>

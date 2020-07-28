@@ -12,7 +12,8 @@ padding:15px;
 .navbar{
 background-color: #394356;
 color:#ffffff;
-
+font-family: segoe ui;
+padding-left:50px;
 }
 .icon{height:35px;
 width:35px;
@@ -30,10 +31,8 @@ margin-right: 10px;;
 .input-text{
     height:100px;
     width: 500px;;
-      padding:10px;  
-        
-        
-        box-shadow: 5px 5px #394356;
+    padding:10px;  
+    box-shadow: 5px 5px #394356;
     background-color: #ffffff;
     border-radius: 6px;
 
@@ -42,7 +41,7 @@ margin-right: 10px;;
 .btn{
     background-color: #394356;
     color:#ffffff;
-            box-shadow: 5px 5px #d1d1e0;
+    box-shadow: 5px 5px #d1d1e0;
 
 }
 .btn:focus{
@@ -69,21 +68,42 @@ flex-direction: column;}
 .note{
     padding:15px;
     border-radius: 5px;
-    width: 250px;
+    width: 260px;
     box-shadow: 4px 4px #f2f2f2;
     margin:10px;
-    height:150px;
+    height:160px;
     border-top: solid 5px #4d4d4d;
+   
+}
+.note-view{
+    height:100px;
     overflow-y: scroll;
     scrollbar-width: 6px;
     scrollbar-color: #f2f2f2f2;
+         
 
+
+}
+.note-view::-webkit-scrollbar {
+    display: none;
 }
 .bin-icon{
-    height:20px;
-    width:20px;
+    
+    height:18px;
+    width:18px;
+    float:right;
+    margin-top:8px;
+
 }
 
+.illustration{height:250px;
+width:400px;}
+.no-notes{display: flex;
+flex-direction: row;}
+.msg{margin-top:100px;
+text-align: center;
+opacity: 70;
+}
 footer {
     height: 40px;
     text-align: center;
@@ -93,12 +113,15 @@ footer {
     margin-top:300px;
 }
 
+
+
 @media screen and (max-width:600px){
     .note-input{
         display: flex;
         flex-direction: column;
         margin-top: 20px;
     }
+    .navbar{padding-left:20px;}
     .action{
         display: flex;
         flex-direction: row;
@@ -109,6 +132,13 @@ footer {
     .notes{
         display: flex;
         flex-direction: column;
+    }
+    .no-notes{
+        display: flex;
+        flex-direction: column;
+    }
+    .msg{margin:20px;
+        font-size: 20px;
     }
     .input-text{
         width:auto;
