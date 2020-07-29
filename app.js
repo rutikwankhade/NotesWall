@@ -7,21 +7,37 @@ const allNotes = [];
 const color = document.querySelector('.get-color');
 const notesList = document.querySelector('.notes-list');
 
+document.addEventListener('keypress', (event) => {
+    if (event.keyCode === 13) {
+        addNewNote();
+    }
+})
 
 function addNewNote() {
+    if (input.value) {
+        let newNote = {
+            note: input.value,
+            noteColor: color.value
 
-    let newNote = {
-        note: input.value,
-        noteColor: color.value
+        };
+        allNotes.push(newNote);
+    }
+    else {
+        alert("A note can't be empty.");
 
-    };
+    }
+   
+
 
     // console.log(newNote);
 
     input.value = "";
 
-    allNotes.push(newNote);
+    
     displayNotes(allNotes);
+
+    
+   
 }
 
 
@@ -57,3 +73,4 @@ function deleteNote(e,element) {
     allNotes.pop(element);
     
 }
+
