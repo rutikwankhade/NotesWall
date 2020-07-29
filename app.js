@@ -32,7 +32,7 @@ function addNewNote() {
     // console.log(newNote);
 
     input.value = "";
-
+    input.focus();
     
     displayNotes(allNotes);
 
